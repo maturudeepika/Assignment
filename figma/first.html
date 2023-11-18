@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Task Manager</title>
+</head>
+<body>
+  <div class="tabs">
+    <button onclick="changeTab('Pending')">Pending</button>
+    <button onclick="changeTab('Completed')">Completed</button>
+  </div>
+
+  <div class="search-filter">
+    <input type="text" id="searchInput" onkeyup="searchTasks()" placeholder="Search tasks...">
+    <select id="filterSelect" onchange="filterTasks()">
+      <option value="all">All</option>
+      <option value="high">High Priority</option>
+      <option value="medium">Medium Priority</option>
+      <option value="low">Low Priority</option>
+    </select>
+  </div>
+
+
+  
+  <div id="taskList"></div>
+
+  <div class="add-task">
+    <input type="text" id="newTaskInput" placeholder="New task title">
+    <select id="newTaskPriority">
+      <option value="high">High Priority</option>
+      <option value="medium">Medium Priority</option>
+      <option value="low">Low Priority</option>
+    </select>
+    <button onclick="addTask()">Add Task</button>
+  </div>
+</div>
+
+  <div id="taskList"></div>
+
+  <!-- ... (unchanged) ... -->
+
+ 
+  <!-- ... (unchanged) ... -->
+
+ 
+
+
+<!-- ... (unchanged) ... -->
+
+
+
+  <div id="taskList"></div>
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
